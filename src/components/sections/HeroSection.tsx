@@ -95,11 +95,11 @@ export function HeroSection() {
               <motion.div
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute top-8 left-8 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 shadow-xl"
+                className="absolute top-8 left-8 bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20 shadow-xl"
               >
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-accent-700/50 flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-white" />
+                <div className="flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-400 to-cyan-500 flex items-center justify-center shadow-lg shadow-emerald-500/30">
+                    <Phone className="w-7 h-7 text-white" />
                   </div>
                   <div>
                     <div className="text-white text-sm font-semibold">AI電話営業</div>
@@ -116,11 +116,11 @@ export function HeroSection() {
                   ease: "easeInOut",
                   delay: 0.5,
                 }}
-                className="absolute top-16 right-4 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 shadow-xl"
+                className="absolute top-16 right-4 bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20 shadow-xl"
               >
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary-500/50 flex items-center justify-center">
-                    <Send className="w-5 h-5 text-white" />
+                <div className="flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-orange-400 to-rose-500 flex items-center justify-center shadow-lg shadow-orange-500/30">
+                    <Send className="w-7 h-7 text-white" />
                   </div>
                   <div>
                     <div className="text-white text-sm font-semibold">フォーム送信</div>
@@ -137,11 +137,11 @@ export function HeroSection() {
                   ease: "easeInOut",
                   delay: 1,
                 }}
-                className="absolute bottom-16 left-12 bg-white/10 backdrop-blur-md rounded-xl p-4 border border-white/20 shadow-xl"
+                className="absolute bottom-16 left-12 bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20 shadow-xl"
               >
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-accent-500/50 flex items-center justify-center">
-                    <Target className="w-5 h-5 text-white" />
+                <div className="flex items-center gap-4">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-violet-400 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-violet-500/30">
+                    <Target className="w-7 h-7 text-white" />
                   </div>
                   <div>
                     <div className="text-white text-sm font-semibold">ターゲティング</div>
