@@ -84,12 +84,12 @@ export const PRICING_PLANS: PricingPlan[] = [
   {
     id: "starter",
     name: "スターター",
-    price: "¥98,000",
-    priceNote: "月額（税別）",
+    price: "¥998,000",
+    priceNote: "6ヶ月の期間内に消費（税別）",
     description: "AI営業を始めたい企業様に",
     features: [
-      "AI電話営業 月500コール",
-      "フォーム自動送信 月1,000件",
+      "AI電話営業 5,000コール",
+      "フォーム自動送信 5,000通",
       "基本ターゲティング機能",
       "レポート・ダッシュボード",
       "メールサポート",
@@ -100,12 +100,12 @@ export const PRICING_PLANS: PricingPlan[] = [
   {
     id: "standard",
     name: "スタンダード",
-    price: "¥248,000",
-    priceNote: "月額（税別）",
+    price: "¥2,980,000",
+    priceNote: "12ヶ月の期間内に消費（税別）",
     description: "本格的にAI営業を活用したい企業様に",
     features: [
-      "AI電話営業 月2,000コール",
-      "フォーム自動送信 月5,000件",
+      "AI電話営業 20,000件",
+      "フォーム自動送信 20,000件",
       "アプローチDBの利用",
       "AIコールスタッフ3名構築可能",
       "AIコールスタッフ分析機能",
