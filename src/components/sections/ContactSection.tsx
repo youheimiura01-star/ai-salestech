@@ -50,7 +50,7 @@ export function ContactSection() {
                   <div>
                     <div className="font-medium text-text-primary">メール</div>
                     <div className="text-sm text-text-secondary">
-                      info@ai-salestech.example.com
+                      info@aidma-hd.jp
                     </div>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export function ContactSection() {
                   <div>
                     <div className="font-medium text-text-primary">電話</div>
                     <div className="text-sm text-text-secondary">
-                      03-XXXX-XXXX（平日 9:00〜18:00）
+                      03-6455-7935（平日 9:00〜18:00）
                     </div>
                   </div>
                 </div>
@@ -74,7 +74,7 @@ export function ContactSection() {
                       所在地
                     </div>
                     <div className="text-sm text-text-secondary">
-                      東京都品川区
+                      〒141-0021 東京都品川区上大崎2-13-30
                     </div>
                   </div>
                 </div>
