@@ -106,10 +106,9 @@ export const PRICING_PLANS: PricingPlan[] = [
     features: [
       "AI電話営業 月2,000コール",
       "フォーム自動送信 月5,000件",
-      "高度なAIターゲティング",
-      "カスタムトークスクリプト",
-      "ABテスト機能",
-      "Slack / Teams連携",
+      "アプローチDBの利用",
+      "AIコールスタッフ3名構築可能",
+      "AIコールスタッフ分析機能",
       "専任カスタマーサクセス",
     ],
     isPopular: true,
