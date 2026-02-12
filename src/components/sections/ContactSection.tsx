@@ -14,10 +14,28 @@ export function ContactSection() {
     phone: "",
     message: "",
   });
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
+    "idle"
+  );
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    alert("お問い合わせありがとうございます。（デモ版のため送信されません）");
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (res.ok) {
+        setStatus("sent");
+        setFormData({ name: "", company: "", email: "", phone: "", message: "" });
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   };
 
   return (
@@ -189,8 +207,18 @@ export function ContactSection() {
                   type="submit"
                   className="w-full"
                 >
-                  送信する
+                  {status === "sending" ? "送信中..." : "送信する"}
                 </Button>
+                {status === "sent" && (
+                  <p className="text-sm text-green-600 text-center font-medium">
+                    お問い合わせありがとうございます。担当者よりご連絡いたします。
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-sm text-red-600 text-center font-medium">
+                    送信に失敗しました。時間をおいて再度お試しください。
+                  </p>
+                )}
               </div>
             </form>
           </AnimatedSection>
